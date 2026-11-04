@@ -1,0 +1,8 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Cross-Origin-Opener-Policy: same-origin
+
+/meeting.html
+  Cross-Origin-Embedder-Policy: credentialless
+  Permissions-Policy: camera=(self), microphone=(self), display-capture=(self)

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>In Class</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/meeting.js" type="module"></script>
+</head>
+<body class="meeting-page">
+  <div id="joining" class="center">
+    <p id="joining-text">Joining class…</p>
+  </div>
+
+  <div id="mock" class="mock" hidden>
+    <header class="topbar">
+      <span class="brand" id="mock-title"></span>
+      <span class="who" id="mock-teacher"></span>
+    </header>
+    <div class="mock-stage">
+      <p class="mock-note">Mock meeting. This section has no Zoom meeting number configured in the n8n API yet.</p>
+      <div class="tiles" id="tiles"></div>
+    </div>
+    <footer class="mock-bar">
+      <span id="mock-countdown" class="muted"></span>
+      <span class="spacer"></span>
+      <button id="mock-end" class="button">Simulate: teacher ends class</button>
+      <button id="mock-leave" class="button danger">Leave</button>
+    </footer>
+  </div>
+
+  <!-- Zoom Client View mounts itself into #zmmtg-root. -->
+  <div id="move-notice" class="move-notice" hidden></div>
+</body>
+</html>

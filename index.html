@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Class Portal</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/portal.js" type="module"></script>
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Class Portal</span>
+    <span id="who" class="who" hidden></span>
+    <button id="logout" class="link" hidden>Sign out</button>
+  </header>
+
+  <main>
+    <p id="error" class="banner error" hidden></p>
+
+    <section id="login" class="card narrow" hidden>
+      <h1>Sign in</h1>
+      <p class="muted">Proof of concept: pick a synthetic student. Real sign-in (Google or LTI) is not built yet.</p>
+      <form id="dev-login">
+        <label for="dev-student">Student</label>
+        <select id="dev-student"></select>
+        <button type="submit" class="button">Sign in as student</button>
+      </form>
+    </section>
+
+    <section id="today" hidden>
+      <div id="status" class="card status"></div>
+      <h2>Today</h2>
+      <ol id="schedule" class="schedule"></ol>
+      <p id="mode" class="muted small"></p>
+    </section>
+  </main>
+</body>
+</html>
